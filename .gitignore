@@ -3,7 +3,8 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-!**/**/twitter4j.properties
+**/twitter4j.properties
+*.log
 ### STS ###
 .apt_generated
 .classpath
