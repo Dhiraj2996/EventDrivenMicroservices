@@ -1,0 +1,151 @@
+2021-05-16 12:14:19 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - Starting TwitterToKafkaService using Java 1.8.0_201 on LAPTOP-N2SOK9VF with PID 15208 (C:\Users\HP PC\Documents\IntelliJProjects\Event-driven Microservices\microservices-demo\twitter-to-kafka-service\target\classes started by DM in C:\Users\HP PC\Documents\IntelliJProjects\Event-driven Microservices\microservices-demo)
+2021-05-16 12:14:19 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - No active profile set, falling back to default profiles: default
+2021-05-16 12:14:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - Started TwitterToKafkaService in 4.256 seconds (JVM running for 6.893)
+2021-05-16 12:14:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService -  Running twitter to kafka
+2021-05-16 12:14:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-05-16 12:14:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - Welcome brother
+2021-05-16 12:14:21 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-16 12:14:21 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:822)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:803)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:346)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaService.main(TwitterToKafkaService.java:26)
+Caused by: java.lang.NullPointerException: null
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.MockKafkaStreamRunner.start(MockKafkaStreamRunner.java:79)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaService.run(TwitterToKafkaService.java:34)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:819)
+	... 5 common frames omitted
+2021-05-16 12:15:22 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - Starting TwitterToKafkaService using Java 1.8.0_201 on LAPTOP-N2SOK9VF with PID 2936 (C:\Users\HP PC\Documents\IntelliJProjects\Event-driven Microservices\microservices-demo\twitter-to-kafka-service\target\classes started by DM in C:\Users\HP PC\Documents\IntelliJProjects\Event-driven Microservices\microservices-demo)
+2021-05-16 12:15:22 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - No active profile set, falling back to default profiles: default
+2021-05-16 12:15:24 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - Started TwitterToKafkaService in 1.991 seconds (JVM running for 3.146)
+2021-05-16 12:15:24 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService -  Running twitter to kafka
+2021-05-16 12:15:24 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-05-16 12:15:24 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - Welcome brother
+2021-05-16 12:15:24 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-05-16 12:15:24 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :Maecenas Maecenas Lorem Kafka sed Maecenas
+2021-05-16 12:15:25 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :dolor lectus Maecenas libero Spring libero ipsum porttitor
+2021-05-16 12:15:26 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :consectetuer sed massa sit consectetuer porttitor Spring malesuada posuere elit malesuada
+2021-05-16 12:15:27 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :ultricies ultricies Maecenas adipiscing Elasticsearch malesuada elit posuere
+2021-05-16 12:15:28 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :lectus congue Fusce elit purus Spring purus Fusce Maecenas consectetuer
+2021-05-16 12:15:29 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :sed ultricies magna congue Kafka posuere congue porttitor
+2021-05-16 12:15:30 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :congue dolor elit magna Java massa Maecenas
+2021-05-16 12:15:31 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :purus Maecenas consectetuer congue Fusce sed Spring massa lectus elit purus
+2021-05-16 12:15:32 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :posuere ipsum sit adipiscing magna Kafka consectetuer amet magna sit
+2021-05-16 12:15:33 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :posuere congue Maecenas sed ipsum Microservices ipsum Lorem libero
+2021-05-16 12:15:34 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :dolor sed posuere Spring elit Maecenas
+2021-05-16 13:47:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - Starting TwitterToKafkaService using Java 1.8.0_201 on LAPTOP-N2SOK9VF with PID 12124 (C:\Users\HP PC\Documents\IntelliJProjects\Event-driven Microservices\microservices-demo\twitter-to-kafka-service\target\classes started by DM in C:\Users\HP PC\Documents\IntelliJProjects\Event-driven Microservices\microservices-demo)
+2021-05-16 13:47:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - No active profile set, falling back to default profiles: default
+2021-05-16 13:47:35 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaService': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.config.TwittertoKafkaServiceConfigData' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-05-16 13:47:35 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-16 13:47:35 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaService required a bean of type 'com.microservices.demo.config.TwittertoKafkaServiceConfigData' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.demo.config.TwittertoKafkaServiceConfigData' in your configuration.
+
+2021-05-16 13:50:54 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - Starting TwitterToKafkaService using Java 1.8.0_201 on LAPTOP-N2SOK9VF with PID 5628 (C:\Users\HP PC\Documents\IntelliJProjects\Event-driven Microservices\microservices-demo\twitter-to-kafka-service\target\classes started by DM in C:\Users\HP PC\Documents\IntelliJProjects\Event-driven Microservices\microservices-demo)
+2021-05-16 13:50:54 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - No active profile set, falling back to default profiles: default
+2021-05-16 13:50:55 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaService': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.config.TwittertoKafkaServiceConfigData' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-05-16 13:50:55 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-16 13:50:55 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaService required a bean of type 'com.microservices.demo.config.TwittertoKafkaServiceConfigData' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.demo.config.TwittertoKafkaServiceConfigData' in your configuration.
+
+2021-05-16 13:54:57 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - Starting TwitterToKafkaService using Java 1.8.0_201 on LAPTOP-N2SOK9VF with PID 8744 (C:\Users\HP PC\Documents\IntelliJProjects\Event-driven Microservices\microservices-demo\twitter-to-kafka-service\target\classes started by DM in C:\Users\HP PC\Documents\IntelliJProjects\Event-driven Microservices\microservices-demo)
+2021-05-16 13:54:57 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - No active profile set, falling back to default profiles: default
+2021-05-16 13:54:59 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - Started TwitterToKafkaService in 2.073 seconds (JVM running for 3.083)
+2021-05-16 13:54:59 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService -  Running twitter to kafka
+2021-05-16 13:54:59 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-05-16 13:54:59 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - Welcome brother
+2021-05-16 13:54:59 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-05-16 13:54:59 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :Lorem Fusce magna consectetuer magna posuere Kafka Fusce Maecenas Lorem elit
+2021-05-16 13:55:00 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :consectetuer massa lectus Fusce ultricies Java sed consectetuer adipiscing sit
+2021-05-16 13:55:01 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :ipsum purus porttitor magna Maecenas Java sit ipsum sit Fusce
+2021-05-16 13:55:02 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :consectetuer Lorem consectetuer adipiscing Spring dolor massa malesuada
+2021-05-16 13:55:03 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :magna consectetuer massa porttitor Java Lorem Maecenas adipiscing
+2021-05-16 13:55:04 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :pulvinar elit dolor posuere sed Kafka dolor magna congue elit
+2021-05-16 13:55:05 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :purus massa ipsum sed congue congue Java libero sit posuere malesuada
+2021-05-16 14:00:24 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - Starting TwitterToKafkaService using Java 1.8.0_201 on LAPTOP-N2SOK9VF with PID 16224 (C:\Users\HP PC\Documents\IntelliJProjects\Event-driven Microservices\microservices-demo\twitter-to-kafka-service\target\classes started by DM in C:\Users\HP PC\Documents\IntelliJProjects\Event-driven Microservices\microservices-demo)
+2021-05-16 14:00:24 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - No active profile set, falling back to default profiles: default
+2021-05-16 14:00:25 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaService': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.config.TwittertoKafkaServiceConfigData' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-05-16 14:00:25 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-16 14:00:25 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaService required a bean of type 'com.microservices.demo.config.TwittertoKafkaServiceConfigData' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.demo.config.TwittertoKafkaServiceConfigData' in your configuration.
+
+2021-05-16 14:01:43 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - Starting TwitterToKafkaService using Java 1.8.0_201 on LAPTOP-N2SOK9VF with PID 16084 (C:\Users\HP PC\Documents\IntelliJProjects\Event-driven Microservices\microservices-demo\twitter-to-kafka-service\target\classes started by DM in C:\Users\HP PC\Documents\IntelliJProjects\Event-driven Microservices\microservices-demo)
+2021-05-16 14:01:43 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - No active profile set, falling back to default profiles: default
+2021-05-16 14:01:44 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaService': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.config.TwittertoKafkaServiceConfigData' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-05-16 14:01:44 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-16 14:01:44 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaService required a bean of type 'com.microservices.demo.config.TwittertoKafkaServiceConfigData' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.demo.config.TwittertoKafkaServiceConfigData' in your configuration.
+
+2021-05-16 14:06:42 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - Starting TwitterToKafkaService using Java 1.8.0_201 on LAPTOP-N2SOK9VF with PID 4620 (C:\Users\HP PC\Documents\IntelliJProjects\Event-driven Microservices\microservices-demo\twitter-to-kafka-service\target\classes started by DM in C:\Users\HP PC\Documents\IntelliJProjects\Event-driven Microservices\microservices-demo)
+2021-05-16 14:06:42 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - No active profile set, falling back to default profiles: default
+2021-05-16 14:06:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - Started TwitterToKafkaService in 2.05 seconds (JVM running for 3.065)
+2021-05-16 14:06:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService -  Running twitter to kafka
+2021-05-16 14:06:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-05-16 14:06:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - Welcome brother
+2021-05-16 14:06:44 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-05-16 14:06:44 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :malesuada sit elit sed congue Microservices posuere porttitor Maecenas posuere
+2021-05-16 14:06:45 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :consectetuer posuere adipiscing adipiscing Java libero pulvinar
+2021-05-16 14:06:46 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :adipiscing Maecenas posuere consectetuer Microservices Lorem Fusce
+2021-05-16 14:06:47 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :consectetuer massa Maecenas posuere libero Spring ultricies massa ultricies
+2021-05-16 14:06:48 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :amet ultricies pulvinar libero posuere Kafka magna magna dolor sit
+2021-05-16 14:06:49 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterListener - Twitter status :dolor sit posuere purus elit sit Java libero consectetuer consectetuer magna

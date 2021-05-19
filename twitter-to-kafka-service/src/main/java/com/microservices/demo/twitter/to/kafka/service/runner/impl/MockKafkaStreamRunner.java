@@ -2,7 +2,7 @@ package com.microservices.demo.twitter.to.kafka.service.runner.impl;
 
 import com.microservices.demo.config.TwittertoKafkaServiceConfigData;
 import com.microservices.demo.twitter.to.kafka.service.exception.TwitterToKafkaServiceException;
-import com.microservices.demo.twitter.to.kafka.service.listener.TwitterListener;
+import com.microservices.demo.twitter.to.kafka.service.listener.TwitterStatusListener;
 import com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,7 +28,7 @@ public class MockKafkaStreamRunner implements StreamRunner {
 
     private final TwittertoKafkaServiceConfigData twitterToKafkaServiceConfigData;
 
-    private final TwitterListener twitterKafkaStatusListener;
+    private final TwitterStatusListener twitterKafkaStatusListener;
 
     private static final Random RANDOM = new Random();
 
@@ -67,7 +67,7 @@ public class MockKafkaStreamRunner implements StreamRunner {
     private static final String TWITTER_STATUS_DATE_FORMAT = "EEE MMM dd HH:mm:ss zzz yyyy";
 
     public MockKafkaStreamRunner(TwittertoKafkaServiceConfigData configData,
-                                 TwitterListener statusListener) {
+                                 TwitterStatusListener statusListener) {
         this.twitterToKafkaServiceConfigData = configData;
         this.twitterKafkaStatusListener = statusListener;
     }
