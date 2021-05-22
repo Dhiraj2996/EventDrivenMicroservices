@@ -33,6 +33,7 @@ public class TwitterKafkaProducer implements KafkaProducer<Long, TwitterAvroMode
         ListenableFuture<SendResult<Long, TwitterAvroModel>> kafkaResultFuture =
                 kafkaTemplate.send(topicName, key, message);
         addCallback(topicName, message, kafkaResultFuture);
+//        kafkaTemplate.flush();
     }
 
     @PreDestroy
