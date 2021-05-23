@@ -5,7 +5,11 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Dhiraj2996/EventDrivenMicroservices/tree/main/config-server-repository
+          uri: https://github.com/Dhiraj2996/Microservices-config-server-repository
           default-label: main
           clone-on-start: true
     fail-fast: true
+  security:
+    user:
+      name: spring_cloud_user
+      password: springCloud_Pwd!
