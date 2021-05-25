@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan("com.microservices.demo")
+@ComponentScan(basePackages = "com.microservices.demo")
 public class KafkaToElasticeServiceApplication {
     public static void main(String[] args) {
         SpringApplication.run(KafkaToElasticeServiceApplication.class,args);
