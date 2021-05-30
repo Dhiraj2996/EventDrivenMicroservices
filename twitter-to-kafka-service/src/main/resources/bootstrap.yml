@@ -1,7 +1,7 @@
 spring:
   application:
     name: twitter-to-kafka-service
-  profile:
+  profiles:
     active: twitter_to_kafka
   cloud:
     config:

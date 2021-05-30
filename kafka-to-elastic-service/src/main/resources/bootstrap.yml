@@ -1,7 +1,7 @@
 spring:
   application:
     name: kafka-to-elastic-service
-  profile:
+  profiles:
     active: kafka_to_elastic
   cloud:
     config:
