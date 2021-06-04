@@ -16,9 +16,9 @@ How to run:
   - go to docker-compose: docker-compose up
 
 Further TODO:
-  Query service(with web UI): To query elastic search documents 
-  Securing services
-  Service Discovery with Eureka
+  Query service(with web UI): To query elastic search documents, 
+  Securing services,
+  Service Discovery with Eureka,
   API Gateway
   
   
